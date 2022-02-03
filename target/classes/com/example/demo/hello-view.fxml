@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="413.0" prefWidth="535.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+
+    </padding>
+      <FlowPane orientation="VERTICAL" prefHeight="26.0" prefWidth="406.0" rowValignment="TOP">
+      <children>
+               <Label fx:id="lb1" prefHeight="16.0" prefWidth="129.0" text="Сумма чека:" />
+         <TextField fx:id="TXsumm" prefHeight="31.0" prefWidth="302.0" />
+      </children></FlowPane>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="verygood" mnemonicParsing="false" onMouseClicked="#verygoodClick" text="Отличное" />
+         <Label fx:id="lb2" contentDisplay="RIGHT" prefHeight="23.0" prefWidth="409.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="good" mnemonicParsing="false" onMouseClicked="#goodClick" text="Нормальное" />
+         <Label fx:id="lb3" prefHeight="16.0" prefWidth="392.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="ploho" mnemonicParsing="false" onMouseClicked="#plohoClick" text="Плохое" />
+         <Label fx:id="lb4" prefHeight="16.0" prefWidth="424.0" />
+      </children>
+   </HBox>
+
+</VBox>
